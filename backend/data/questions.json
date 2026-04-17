@@ -1,0 +1,45 @@
+[
+  {
+    "id": "budget",
+    "type": "range",
+    "label": "What is your budget range?",
+    "min": 500000,
+    "max": 3000000
+  },
+  {
+    "id": "bodyType",
+    "type": "multi-select",
+    "label": "Which body type do you prefer?",
+    "options": [
+      { "label": "SUV", "value": "SUV" },
+      { "label": "Sedan", "value": "Sedan" },
+      { "label": "Hatchback", "value": "Hatchback" },
+      { "label": "MUV", "value": "MUV" }
+    ]
+  },
+  {
+    "id": "fuelType",
+    "type": "multi-select",
+    "label": "Preferred fuel type",
+    "options": [
+      { "label": "Petrol", "value": "Petrol" },
+      { "label": "Diesel", "value": "Diesel" },
+      { "label": "CNG", "value": "CNG" },
+      { "label": "Hybrid", "value": "Hybrid" }
+    ]
+  },
+  {
+    "id": "mileage",
+    "type": "range",
+    "label": "Minimum mileage required",
+    "min": 10,
+    "max": 30
+  },
+  {
+    "id": "safety",
+    "type": "range",
+    "label": "Minimum safety rating",
+    "min": 2,
+    "max": 5
+  }
+]
