@@ -202,5 +202,61 @@ Recommended additions for full production hardening:
 - Ensure backend/data/cars.json exists.
 - Run npm run seed in backend.
 
+## Future Enhancements (Suggestions / Roadmap)
+
+### Tier 1: Core Product Improvements
+1. **Real Car Data Integration**
+   - Replace mock JSON with live API from CarDekho, AutoX, or CarWale.
+   - Implement web scraping or REST client to fetch real inventory.
+   - Estimated effort: 2–3 days.
+   - Impact: Live, up-to-date car data with real pricing and specs.
+
+2. **Chatbot / Natural Language Questionnaire**
+   - Add conversational chat interface as alternative to form.
+   - Parse free-text input (e.g., "safe family SUV under 15L") into structured preferences.
+   - Use keyword extraction or LLM (OpenAI/Mistral) for intent parsing.
+   - Keep current form-based flow as fallback.
+   - Estimated effort: 3–5 days.
+   - Impact: Faster user interaction, improved engagement.
+
+3. **Authentication & Saved Searches**
+   - Add Google OAuth or email login.
+   - Save past searches and shortlists to user profile.
+   - Estimated effort: 2–3 days.
+   - Impact: Repeat engagement, personalized experience.
+
+### Tier 2: Quality & Observability
+1. **Comprehensive Test Coverage**
+   - Integration tests for API contracts.
+   - Frontend component unit tests for validation and rendering.
+   - E2E tests for full happy path (questions → recommendations → details).
+   - Load testing for /api/recommendations endpoint.
+   - Estimated effort: 3–4 days.
+
+2. **Analytics & Monitoring**
+   - Track most-viewed cars, popular preferences, conversion rates.
+   - Error alerts via Sentry or Datadog.
+   - User journey tracking.
+   - Estimated effort: 1–2 days.
+
+3. **Performance Optimization**
+   - Add result caching (Redis or in-memory).
+   - Lazy-load car images.
+   - Minify and compress frontend assets.
+   - Estimated effort: 1 day.
+
+### Tier 3: Advanced Features
+1. **Comparison View** – Side-by-side car comparison table with specs.
+2. **Dealership Locator** – Show nearby dealers and inventory links.
+3. **Finance Calculator** – Loan EMI estimator based on car price and tenure.
+4. **Mobile App** – React Native or Flutter wrapper for iOS/Android.
+5. **Review Aggregation** – Pull real user reviews from external platforms.
+6. **Car Inspection Report** – Link to detailed inspection/valuation reports.
+
+### Implementation Notes
+- Real data + chatbot can be implemented independently or together.
+- Keep recommendation scoring logic unchanged; all enhancements are data/UI layer additions.
+- Archive mock dataset in version control for testing fallback paths.
+
 ## License
 For assignment and educational use.
