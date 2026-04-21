@@ -2,6 +2,13 @@
 
 Production-ready starter project for a full-stack car discovery application that guides users through preference questions and returns a session-based shortlist.
 
+## Live Demo
+
+- **Frontend (Vercel)**: https://car-discovery-8u4gapeb4-sachin-yadavs-projects-79548f81.vercel.app
+- **Backend (Render)**: https://car-discovery-mvp-2.onrender.com
+- **Backend Health Check**: https://car-discovery-mvp-2.onrender.com/api/health
+- **GitHub Repository**: https://github.com/ysachin757/Car-Discovery-MVP
+
 ## Highlights
 - Full-stack TypeScript architecture
 - Question-first recommendation flow
